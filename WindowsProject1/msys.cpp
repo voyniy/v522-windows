@@ -70,9 +70,9 @@ void myCreateWidget(HWND hWnd)
 //------------------------------------------------------------------------------------------------------------|
 //                                                                                                            |number posle WM_COMMAND
 //                                                                                                            |	
-	HWND hStatic =	CreateWindowA("static","qwertyuiop",WS_VISIBLE | WS_CHILD | ES_CENTER, 5,5,200,20, hWnd, NULL,NULL,NULL)
+	HWND hStatic = CreateWindowA("static", "qwertyuiop", WS_VISIBLE | WS_CHILD | ES_CENTER, 5, 5, 200, 20, hWnd, NULL, NULL, NULL);
 	// HWND h0 = CreateWindowA("edit",........................................| ES_MULTILINE -> edit > 1 stroki
 	//                                                                                       | WS_VSCROLL -> + scrolling    
 	//HWND h0 = CreateWindowA("button"
-
+	SendMessageA(hStatic,SB
 }
