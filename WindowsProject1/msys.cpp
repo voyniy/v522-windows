@@ -58,6 +58,8 @@ void myAddListnerCommand(UINT msg, void (*ptrfn)(WPARAM, LPARAM))
 	_tmp.msg = msg;
 	_tmp.fn = ptrfn;
 
+
+
 	msgfnCommand.push_back(_tmp);
 }
 
