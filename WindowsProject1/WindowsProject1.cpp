@@ -6,6 +6,7 @@
 
 
 #include <thread>
+#include <string>
 
 #define MAX_LOADSTRING 100
 
@@ -137,6 +138,14 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
         break;
         }
+    case WM_MOUSEMOVE:
+    {
+    //    int x = (short)LOWORD(lParam);
+    //    int y = (short)HIWORD(lParam);
+    //    std::string text = std::to_string(x) + ":" + std::to_string(y);
+    //    SendMessage(hwndSb, SB_SETTEXTA, 1, (LPARAM)text.c_str());
+        break;
+    }
     case WM_COMMAND:
         {
             int wmId = LOWORD(wParam);
